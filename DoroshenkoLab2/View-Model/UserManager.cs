@@ -8,6 +8,6 @@ namespace DoroshenkoLab2
 {
     internal static class UserManager
     {
-        internal static User CurrentUser { get; set; }
+        internal static Person CurrentUser { get; set; }
     }
 }

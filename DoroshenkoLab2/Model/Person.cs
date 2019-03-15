@@ -4,7 +4,7 @@ using System.Text.RegularExpressions;
 
 namespace DoroshenkoLab2
 {
-    internal class User
+    internal class Person
     {
         private DateTime _birthDate;
         private string _name;
@@ -139,14 +139,14 @@ namespace DoroshenkoLab2
             }
         }
 
-        private User(string name, string surname, string email)
+        private Person(string name, string surname, string email)
         {
             Name = name;
             Surname = surname;
             Email = email;
         }
 
-        private User(string name, string surname, DateTime birthDate)
+        private Person(string name, string surname, DateTime birthDate)
         {
             Name = name;
             Surname = surname;
@@ -157,7 +157,7 @@ namespace DoroshenkoLab2
             SunSign = CalcSunSign();
         }
 
-        internal User(string name, string surname, string email, DateTime birthDate) : this(name, surname, birthDate)
+        internal Person(string name, string surname, string email, DateTime birthDate) : this(name, surname, birthDate)
         {
             Email = email;
         }

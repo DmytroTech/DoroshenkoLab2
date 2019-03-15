@@ -181,7 +181,7 @@ namespace DoroshenkoLab2
             {
                 await Task.Run(() =>
                 {
-                    UserManager.CurrentUser = UserCalcAge.CreateUser(_name, _surname, _email, _date);
+                    UserManager.CurrentUser = UserCalcAge.PersonCreated(_name, _surname, _email, _date);
                     Thread.Sleep(1000);
                 });
 

@@ -8,9 +8,9 @@ namespace DoroshenkoLab2
 {
     internal static class UserCalcAge
     {
-        internal static User CreateUser(string name, string surname, string email, DateTime date)
+        internal static Person PersonCreated(string name, string surname, string email, DateTime date)
         {
-            return new User(name, surname, email, date);
+            return new Person(name, surname, email, date);
         }
     }
 }
