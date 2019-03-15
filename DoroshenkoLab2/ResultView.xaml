@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="DoroshenkoLab2.ResultView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:DoroshenkoLab2"
+             mc:Ignorable="d" 
+             d:DesignHeight="400" d:DesignWidth="400" x:ClassModifier="internal">
+    <Grid Name="ResultGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15"></ColumnDefinition>
+            <ColumnDefinition Width="150"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="15"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="5"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="1" FontSize="15" FontWeight="Bold" Text="Name " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="1" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding Name, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="3" FontSize="15" FontWeight="Bold" Text="Second name: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="3" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding Surname, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="5" FontSize="15" FontWeight="Bold" Text="Email: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="5" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding Email, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="7" FontSize="15" FontWeight="Bold" Text="Birth Day: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="7" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding BirthDate, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="9" FontSize="15" FontWeight="Bold" Text="Is adult: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="9" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding Adult, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="11" FontSize="15" FontWeight="Bold" Text="Birthday: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="11" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding Birthday, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="13" FontSize="15" FontWeight="Bold" Text="Sun Sign: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="13" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding WestZ, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <TextBlock Grid.Row="15" FontSize="15" FontWeight="Bold" Text="Chinese Sing: " Grid.Column="1"></TextBlock>
+        <TextBlock Grid.Row="15" FontSize="15" Grid.Column="2" HorizontalAlignment="Left" Text="{Binding ChinZ, UpdateSourceTrigger=PropertyChanged, Mode=OneWay}"></TextBlock>
+        <Button Content="Back" Grid.Row="17" Grid.Column="1" FontSize="20" Grid.ColumnSpan="2" Command="{Binding BackToRegistr}"/>
+    </Grid>
+</UserControl>
